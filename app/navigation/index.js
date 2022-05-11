@@ -16,6 +16,8 @@ import StoreFront from '../containers/screens/StoreFront';
 import CreateListing from '../containers/screens/CreateListing';
 import CategorySections from '../containers/screens/CategorySections';
 import MarketPlace from '../containers/screens/MarketPlace';
+import MarketPlaceTabs from './MarketPlaceTab';
+import BottomTab from './BottomTabBar';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -49,6 +51,12 @@ class AppStack extends React.Component {
           component={MarketPlace}
           options={{headerShown: false}}
         />
+        <Stack.Screen
+          name="BottomTab"
+          component={BottomTab}
+          options={{headerShown: false}}
+        />
+
         <Stack.Screen
           name="CategorySections"
           component={CategorySections}
