@@ -1,13 +1,10 @@
 import React, {useRef, useState} from 'react';
 import {View, StyleSheet, FlatList} from 'react-native';
-import Color from '../../common/Color';
-import Header from '../../components/Header';
-import BusinessMarketPlace from '../../components/BusinessMarketPlace';
-import MarketPlaceTabs from '../../navigation/MarketPlaceTab';
-import AmountHeader from '../../components/AmountHeader';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import Color from '../../../common/Color';
+import Header from '../../../components/Header';
+import BusinessMarketPlace from '../../../components/BusinessMarketPlace';
 
-const MarketPlace: React.FC = ({navigation}) => {
+const MarketPlaceListing: React.FC = ({navigation}) => {
   const [dataArray, setDataArray] = useState([
     'Advertising & marketing',
     'Automotive',
@@ -18,14 +15,12 @@ const MarketPlace: React.FC = ({navigation}) => {
   ]);
 
   return (
-    <SafeAreaView style={styles.main}>
-      <AmountHeader
+    <View style={styles.main}>
+      <Header
         navigationValue={() => {
           navigation.pop();
         }}
-        icon={require('../../assets/images/amount.png')}
-        TotalAmount="754.00"
-        RemainingAmount={'-246.00'}
+        title={'What are you interested in?'}
       />
       <View style={styles.border}></View>
       <View style={styles.list}>
@@ -40,14 +35,14 @@ const MarketPlace: React.FC = ({navigation}) => {
                 }}
                 title={dataArray[index]}
                 description={'Cosmic Cocao'}
-                logo={require('../../assets/images/yoga.png')}
-                icon={require('../../assets/images/frameLogo.png')}
-                descriptionIcon={require('../../assets/images/frameLogo.png')}></BusinessMarketPlace>
+                logo={require('../../../assets/images/yoga.png')}
+                icon={require('../../../assets/images/frameLogo.png')}
+                descriptionIcon={require('../../../assets/images/frameLogo.png')}></BusinessMarketPlace>
             );
           }}
         />
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 const styles = StyleSheet.create({
@@ -68,4 +63,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MarketPlace;
+export default MarketPlaceListing;

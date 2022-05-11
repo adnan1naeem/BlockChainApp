@@ -3,16 +3,14 @@
 import color from 'color';
 
 const Color = {
-  
-
   primary: '#9E7BFF',
   primaryLight: '#8467D7',
   primaryDark: '#893BFF',
+  primaryActive: '#7161EF',
 
-  whiteColor : 'white',
+  whiteColor: 'white',
 
-  blueColor : '#699DFF',
-
+  blueColor: '#699DFF',
 
   error: '#f44336',
   facebook: '#3b5998',
@@ -21,7 +19,7 @@ const Color = {
   main: '#fff',
   textgrey: '#707070',
   grey: '#F2F2F2',
-  
+
   accent: '#00A859',
   accentLight: '#FFD54F',
   lightgray: '#707070',
@@ -129,6 +127,7 @@ const Color = {
   lightBlue: '#9ddaff',
   blue1: 'rgba(30, 165, 233, 1)',
   blue2: 'rgba(3, 207, 254, 1)',
+  purple: '#D669FF',
 };
 
 export default Color;

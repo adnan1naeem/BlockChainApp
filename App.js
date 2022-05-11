@@ -8,6 +8,7 @@
 
 import React from 'react';
 import {Provider} from 'react-redux';
+import {LogBox} from 'react-native';
 import {persistStore} from 'redux-persist';
 import store from './app/store/configureStore';
 import Router from './app/Router';
@@ -24,6 +25,7 @@ class App extends React.Component {
         accent: '#FF9523',
       },
     };
+    LogBox.ignoreAllLogs();
     return (
       <Provider store={store}>
         <PaperProvider theme={theme}>
