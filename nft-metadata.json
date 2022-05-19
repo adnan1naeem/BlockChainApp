@@ -1,0 +1,11 @@
+{
+  "attributes": [
+    {
+      "color": "Blue",
+      "value": "ABC"
+    }
+  ],
+  "description": "This is an art Exhibition Image",
+  "image": "https://gateway.pinata.cloud/ipfs/QmTfDj9kehaqenkzdTpMFWtVuC6g7EZiU27SGtMgVdtsf2",
+  "name": "painting"
+}
